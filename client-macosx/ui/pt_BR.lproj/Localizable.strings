@@ -1,0 +1,75 @@
+
+"Add to contacts" = "Adicionar aos contatos";
+
+/* Contextual menu action */
+"Call number" = "Call number";
+
+/* Open panel prompt for 'Choose a file' */
+"Choose" = "Escolha";
+
+/* Open panel title */
+"Choose a CA list" = "Escolha uma lista CA";
+
+/* Open panel title */
+"Choose a certificate" = "Escolha um certificado";
+
+/* Open panel title */
+"Choose a directory" = "Choose a directory";
+
+/* Open panel title */
+"Choose a private key file" = "Escolha um arquivo de chave privada";
+
+/* Open panel prompt for 'Choose a file' */
+"Choose CA" = "Escolha CA";
+
+/* Open panel prompt for 'Choose a directory' */
+"Choose directory" = "Choose directory";
+
+/* Contextual menu entry */
+"Choose file" = "Escolha arquivo";
+
+/* Continue button */
+"Continue" = "Continuar";
+
+/* No comment provided by engineer. */
+"Copy" = "Copiar";
+
+/* Contextual menu action */
+"Copy number" = "Copiar número";
+
+/* Incoming call from {Name} */
+"Incoming call from %@" = "Incoming call from %@";
+
+/* Indication for user */
+"Just a moment..." = "Só um momento...";
+
+/* Message from {Name} */
+"Message from %@" = "Message from %@";
+
+/* Button label */
+"Pause" = "Pause";
+
+/* Button label */
+"Play" = "Play";
+
+/* Button Action */
+"Refuse" = "Recusar";
+
+/* Contextual menu entry */
+"Remove value" = "Remover valor";
+
+/* Show advice to user */
+"Reopen account to see your hash" = "Reabrir conta para ver seu hash";
+
+/* Display message to user */
+"Ring is already ready to work" = "A conexão já está pronta para trabalhar";
+
+/* No comment provided by engineer. */
+"Share" = "Share";
+
+/* No comment provided by engineer. */
+"Text Actions" = "Text Actions";
+
+/* Name used when user leave field empty */
+"Unknown" = "Desconhecido";
+

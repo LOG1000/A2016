@@ -1,0 +1,33 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+
+src/accountaudiotab.cpp
+src/accountgeneraltab.cpp
+src/accountvideotab.cpp
+src/accountview.cpp
+src/contactsview.cpp
+src/dialogs.c
+src/editcontactview.cpp
+src/generalsettingsview.cpp
+src/historyview.cpp
+src/ringnotify.cpp
+src/ring_client_options.c
+src/backends/edscontactbackend.cpp
+src/utils/menus.cpp
+src/ringmainwindow.cpp
+src/ringwelcomeview.cpp
+src/video/video_widget.cpp
+ui/accountadvancedtab.ui
+ui/accountaudiotab.ui
+ui/accountgeneraltab.ui
+ui/accountsecuritytab.ui
+ui/accountvideotab.ui
+ui/accountview.ui
+ui/choosecontactview.ui
+ui/currentcallview.ui
+ui/editcontactview.ui
+ui/generalsettingsview.ui
+ui/incomingcallview.ui
+ui/mediasettingsview.ui
+ui/ringgearsmenu.ui
+ui/ringmainwindow.ui

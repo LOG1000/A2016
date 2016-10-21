@@ -1,0 +1,115 @@
+# Copyright (C) 2016 Savoir-faire Linux Inc.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+.DEFAULT_GOAL := package-all
+
+##############################
+## Version number variables ##
+##############################
+# YYYY-MM-DD
+LAST_COMMIT_DATE:=$(shell git log -1 --format=%cd --date=short)
+
+# number of commits that day
+NUMBER_OF_COMMITS:=$(shell git log --format=%cd --date=short | grep -c $(LAST_COMMIT_DATE))
+
+# YYMMDD
+LAST_COMMIT_DATE_SHORT:=$(shell echo $(LAST_COMMIT_DATE) | sed -s 's/-//g')
+
+# last commit id
+COMMIT_ID:=$(shell git rev-parse --short HEAD)
+
+RELEASE_VERSION:=$(LAST_COMMIT_DATE_SHORT).$(NUMBER_OF_COMMITS).$(COMMIT_ID)
+RELEASE_TARBALL_FILENAME:=ring_$(RELEASE_VERSION).tar.gz
+
+# Debian versions
+DEBIAN_VERSION:=$(RELEASE_VERSION)~dfsg1-1
+DEBIAN_DSC_FILENAME:=ring_$(DEBIAN_VERSION).dsc
+
+#####################
+## Other variables ##
+#####################
+TMPDIR := $(shell mktemp -d)
+CURRENT_UID:=$(shell id -u)
+
+#############################
+## Release tarball targets ##
+#############################
+.PHONY: release-tarball
+release-tarball: $(RELEASE_TARBALL_FILENAME)
+
+$(RELEASE_TARBALL_FILENAME):
+	# Fetch tarballs
+	mkdir -p daemon/contrib/native
+	cd daemon/contrib/native && \
+	    ../bootstrap && make list && \
+	    make fetch-all -j || make fetch-all || make fetch-all
+	rm -rf daemon/contrib/native
+
+	cd $(TMPDIR) && \
+	    tar -C $(CURDIR)/.. \
+	        --exclude-vcs \
+	        -zcf $(RELEASE_TARBALL_FILENAME) \
+	        $(shell basename $(CURDIR)) && \
+	    mv $(RELEASE_TARBALL_FILENAME) $(CURDIR)
+
+	rm -rf $(CURDIR)/daemon/contrib/tarballs/*
+
+#######################
+## Packaging targets ##
+#######################
+
+.PHONY: package-all
+package-all: package-debian_8 \
+             package-debian_8_i386 \
+             package-debian_9 \
+             package-debian_9_i386 \
+             package-ubuntu_14.04 \
+             package-ubuntu_14.04_i386 \
+             package-ubuntu_15.10 \
+             package-ubuntu_15.10_i386 \
+             package-ubuntu_16.04 \
+             package-ubuntu_16.04_i386 \
+             package-fedora_22 \
+             package-fedora_22_i386 \
+             package-fedora_23 \
+             package-fedora_23_i386 \
+             package-fedora_24 \
+             package-fedora_24_i386
+
+# Append the output of make-packaging-target to this Makefile
+# see Makefile.packaging.distro_targets
+$(shell scripts/make-packaging-target.py --generate-all > Makefile.packaging.distro_targets)
+include Makefile.packaging.distro_targets
+
+###################
+## Other targets ##
+###################
+.PHONY: docs
+docs: env
+	env/bin/sphinx-build -b html docs/source docs/build/html
+	env/bin/sphinx-build -b texinfo docs/source docs/build/texinfo
+
+env:
+	virtualenv env
+	env/bin/pip install Sphinx==1.4.1 sphinx-rtd-theme==0.1.9
+
+.PHONY: clean
+clean:
+	rm -rf env
+	rm -rf docs/build
+	rm -f ring_*.tar.gz
+	rm -rf packages
+	rm -f Makefile.packaging.distro_targets
+	rm -f .docker-image-*

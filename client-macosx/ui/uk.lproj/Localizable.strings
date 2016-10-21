@@ -1,0 +1,75 @@
+
+"Add to contacts" = "Додати контакти";
+
+/* Contextual menu action */
+"Call number" = "Call number";
+
+/* Open panel prompt for 'Choose a file' */
+"Choose" = "Виберіть";
+
+/* Open panel title */
+"Choose a CA list" = "Виберіть список CA сертифікатів";
+
+/* Open panel title */
+"Choose a certificate" = "Виберіть сертифікат";
+
+/* Open panel title */
+"Choose a directory" = "Choose a directory";
+
+/* Open panel title */
+"Choose a private key file" = "Виберіть приватний ключ";
+
+/* Open panel prompt for 'Choose a file' */
+"Choose CA" = "Виберіть CA";
+
+/* Open panel prompt for 'Choose a directory' */
+"Choose directory" = "Choose directory";
+
+/* Contextual menu entry */
+"Choose file" = "Виберіть файл";
+
+/* Continue button */
+"Continue" = "Далі";
+
+/* No comment provided by engineer. */
+"Copy" = "Копіювати";
+
+/* Contextual menu action */
+"Copy number" = "Копіювати номер";
+
+/* Incoming call from {Name} */
+"Incoming call from %@" = "Incoming call from %@";
+
+/* Indication for user */
+"Just a moment..." = "Зачекайте трохи...";
+
+/* Message from {Name} */
+"Message from %@" = "Message from %@";
+
+/* Button label */
+"Pause" = "Pause";
+
+/* Button label */
+"Play" = "Play";
+
+/* Button Action */
+"Refuse" = "Скидання";
+
+/* Contextual menu entry */
+"Remove value" = "Видалити значення";
+
+/* Show advice to user */
+"Reopen account to see your hash" = "Перевідкрити аккаунт щоб побачити хеш";
+
+/* Display message to user */
+"Ring is already ready to work" = "Ring готовий до використання";
+
+/* No comment provided by engineer. */
+"Share" = "Share";
+
+/* No comment provided by engineer. */
+"Text Actions" = "Text Actions";
+
+/* Name used when user leave field empty */
+"Unknown" = "Невідомий";
+

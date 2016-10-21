@@ -1,0 +1,75 @@
+
+"Add to contacts" = "أضف إلى الاتصالات المعروفة";
+
+/* Contextual menu action */
+"Call number" = "Call number";
+
+/* Open panel prompt for 'Choose a file' */
+"Choose" = "إختار";
+
+/* Open panel title */
+"Choose a CA list" = "أضف إلى قائمة هيئات الشهادة CA";
+
+/* Open panel title */
+"Choose a certificate" = "إختار شهادة";
+
+/* Open panel title */
+"Choose a directory" = "Choose a directory";
+
+/* Open panel title */
+"Choose a private key file" = "إختار ملف مفتاح خاص";
+
+/* Open panel prompt for 'Choose a file' */
+"Choose CA" = "إختار هيئة شهادة CA";
+
+/* Open panel prompt for 'Choose a directory' */
+"Choose directory" = "Choose directory";
+
+/* Contextual menu entry */
+"Choose file" = "إختار ملف";
+
+/* Continue button */
+"Continue" = "واصل...";
+
+/* No comment provided by engineer. */
+"Copy" = "إنسخ";
+
+/* Contextual menu action */
+"Copy number" = "نسخ الرقم";
+
+/* Incoming call from {Name} */
+"Incoming call from %@" = "Incoming call from %@";
+
+/* Indication for user */
+"Just a moment..." = "الرجاء الإنتظار لحظة...";
+
+/* Message from {Name} */
+"Message from %@" = "Message from %@";
+
+/* Button label */
+"Pause" = "Pause";
+
+/* Button label */
+"Play" = "Play";
+
+/* Button Action */
+"Refuse" = "أرفض";
+
+/* Contextual menu entry */
+"Remove value" = "حذف";
+
+/* Show advice to user */
+"Reopen account to see your hash" = "أعد فتح الحساب لرؤية مزيجك hash";
+
+/* Display message to user */
+"Ring is already ready to work" = "ring جاهز للعمل";
+
+/* No comment provided by engineer. */
+"Share" = "Share";
+
+/* No comment provided by engineer. */
+"Text Actions" = "Text Actions";
+
+/* Name used when user leave field empty */
+"Unknown" = "مجهول";
+

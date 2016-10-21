@@ -1,0 +1,75 @@
+
+"Add to contacts" = "Добавить в контакты";
+
+/* Contextual menu action */
+"Call number" = "Позвонить по номеру";
+
+/* Open panel prompt for 'Choose a file' */
+"Choose" = "Выбрать";
+
+/* Open panel title */
+"Choose a CA list" = "Выбрать список CA";
+
+/* Open panel title */
+"Choose a certificate" = "Выбрать сертификат";
+
+/* Open panel title */
+"Choose a directory" = "Выбор директории";
+
+/* Open panel title */
+"Choose a private key file" = "Выбрать файл первичного ключа";
+
+/* Open panel prompt for 'Choose a file' */
+"Choose CA" = "Выбрать CA";
+
+/* Open panel prompt for 'Choose a directory' */
+"Choose directory" = "Выбор директории";
+
+/* Contextual menu entry */
+"Choose file" = "Выбрать файл";
+
+/* Continue button */
+"Continue" = "Продолжить";
+
+/* No comment provided by engineer. */
+"Copy" = "Копировать";
+
+/* Contextual menu action */
+"Copy number" = "Копировать номер";
+
+/* Incoming call from {Name} */
+"Incoming call from %@" = "Входящий вызов от %@";
+
+/* Indication for user */
+"Just a moment..." = "Один момент...";
+
+/* Message from {Name} */
+"Message from %@" = "Сообщение от %@";
+
+/* Button label */
+"Pause" = "Пауза";
+
+/* Button label */
+"Play" = "Играть";
+
+/* Button Action */
+"Refuse" = "Отклонить";
+
+/* Contextual menu entry */
+"Remove value" = "Удалить значение";
+
+/* Show advice to user */
+"Reopen account to see your hash" = "Переоткрыть учетную запись для просмотра вашего хеша";
+
+/* Display message to user */
+"Ring is already ready to work" = "Ring уже готов к работе";
+
+/* No comment provided by engineer. */
+"Share" = "Поделиться";
+
+/* No comment provided by engineer. */
+"Text Actions" = "Действия с текстом";
+
+/* Name used when user leave field empty */
+"Unknown" = "Неизвестно";
+
